@@ -51,7 +51,7 @@ const HomePageGetInTouch = () => {
           {contact.map((data) => {
             if (data?.type === "tel") {
               return (
-                <div className={classes.info}>
+                <div className={classes.info} key={data?.value}>
                   <span>{data?.icon}</span>
                   <a href={`tel:${data?.value}`}>{data?.value}</a>
                 </div>
@@ -60,14 +60,14 @@ const HomePageGetInTouch = () => {
 
             if (data?.type === "mailto") {
               return (
-                <div className={classes.info}>
+                <div className={classes.info} key={data?.value}>
                   <span>{data?.icon}</span>
                   <a href={`mailto:${data?.value}`}>{data?.value}</a>
                 </div>
               );
             } else {
               return (
-                <div className={classes.info}>
+                <div className={classes.info} key={data?.value}>
                   <span>{data?.icon}</span>
                   <a href={`#0`}>{data?.value}</a>
                 </div>

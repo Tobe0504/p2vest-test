@@ -3,15 +3,7 @@ import React, { CSSProperties } from "react";
 
 type ButtonPropTypes = {
   children: React.ReactNode;
-  type?:
-    | "primary"
-    | "secondary"
-    | "tertiary"
-    | "null"
-    | "invalid"
-    | "yellow"
-    | "bordered"
-    | "delete";
+  type?: "primary" | "secondary" | "bordered";
   className?: string;
   disabled?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -37,16 +29,8 @@ const Button = ({
       className={`${classes.button} ${
         type === "secondary"
           ? classes.secondary
-          : type === "tertiary"
-          ? classes.tertiary
-          : type === "null"
-          ? classes.null
-          : type === "invalid"
-          ? classes.invalid
           : type === "bordered"
           ? classes.bordered
-          : type === "delete"
-          ? classes.delete
           : classes.primary
       } ${className}`}
       onClick={onClick}

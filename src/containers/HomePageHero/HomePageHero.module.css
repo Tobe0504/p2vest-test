@@ -1,0 +1,44 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.detailsWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slideInDown {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slideOutUp {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.introWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slideOutDown {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slideInUp {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -44,13 +44,13 @@ const Footer = () => {
       {content.map((data) => {
         if (data?.url?.includes("https")) {
           return (
-            <a href={data?.url} target="_blank" rel="noreferer">
+            <a href={data?.url} target="_blank" rel="noreferer" key={data?.url}>
               <span>{data?.content}</span>
             </a>
           );
         } else {
           return (
-            <Link href={data?.url}>
+            <Link href={data?.url} key={data?.url}>
               <span>{data?.content}</span>
             </Link>
           );
