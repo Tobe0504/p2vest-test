@@ -1,0 +1,135 @@
+.container {
+  padding: 200px 80px 90px 80px;
+  background: var(--purple);
+  color: var(--white);
+  display: flex;
+  gap: 234px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftContainer {
+  flex-basis: 266px;
+}
+
+.leftContainer > h3 {
+  font-family: Paytone One;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: 0%;
+}
+
+.leftContainer > p:nth-child(2) {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-block: 80px;
+}
+
+.leftContainer > p:nth-child(3) {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-bottom: 1rem;
+}
+
+.leftContainer > button {
+  margin-bottom: 80px;
+}
+
+.leftContainer > div {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: var(--white100);
+}
+
+.rightContainer {
+  flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .leftContainer {
+    flex-basis: 100%;
+  }
+
+  .leftContainer > h3 {
+    font-size: 32px;
+    line-height: 150%;
+  }
+
+  .leftContainer > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-block: 32px;
+  }
+
+  .leftContainer > p:nth-child(3) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 0.5rem;
+  }
+
+  .leftContainer > button {
+    margin-bottom: 32px;
+  }
+
+  .rightContainer {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .leftContainer {
+    flex-basis: 100%;
+  }
+
+  .leftContainer > h3 {
+    font-size: 32px;
+    line-height: 150%;
+  }
+
+  .leftContainer > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-block: 32px;
+  }
+
+  .leftContainer > p:nth-child(3) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 0.5rem;
+  }
+
+  .leftContainer > button {
+    margin-bottom: 32px;
+  }
+
+  .rightContainer {
+    flex: 1;
+  }
+}

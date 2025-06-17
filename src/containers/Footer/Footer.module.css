@@ -1,0 +1,49 @@
+.container {
+  background: var(--purple);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 80px;
+  padding-block: 36px;
+  color: var(--white);
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.container > a:nth-child(5) {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-inline: 1px;
+    padding-block: 32px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .container > a:nth-child(5),
+  .container > a:nth-child(6),
+  .container > a:nth-child(7) {
+    display: block;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* .container > a {
+    display: block;
+    border: 2px solid red;
+  } */
+
+  .container > a:nth-child(5) {
+    margin-left: 0;
+  }
+}

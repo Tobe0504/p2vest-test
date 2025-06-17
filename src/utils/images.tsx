@@ -1,0 +1,16 @@
+export const IMAGES = {
+  cad: "/images/cad.svg",
+  usd: "/images/usd.svg",
+  ngn: "/images/ngn.svg",
+  gha: "/images/gha.svg",
+  iPhone: "/images/iPhone.svg",
+  girl: "/images/girl.svg",
+  iPhoneAsos: "/images/iPhoneAsos.svg",
+  productImage1: "/images/productImage1.svg",
+  productImage2: "/images/productImage2.svg",
+  productImage3: "/images/productImage3.svg",
+  calendar: "/images/calendar.svg",
+  chatImage: "/images/chatImage.svg",
+  phoneImage: "/images/phoneImage.svg",
+  mailImage: "/images/mailImage.svg",
+};

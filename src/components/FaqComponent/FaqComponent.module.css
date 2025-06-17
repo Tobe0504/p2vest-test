@@ -1,0 +1,131 @@
+.container {
+  padding: 2rem 0rem;
+  border-bottom: 2px solid var(--purple200);
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Paytone One;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: var(--purple300);
+  gap: 1rem;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.question:hover {
+  color: var(--white);
+}
+
+.question > svg {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.answer {
+  margin-top: 1rem;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+  border-radius: 12px;
+  background-color: var(--purple400);
+  color: var(--white);
+}
+
+.answer > p {
+  padding: 32px;
+}
+
+.answer > ul > li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.answer > ul > li > b {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: left;
+  }
+
+  .question > div {
+    height: 24px;
+    width: 24px;
+
+    border-radius: 50%;
+  }
+
+  .question > svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .question:hover > div {
+    scale: 1.1;
+  }
+
+  .answer {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: left;
+  }
+
+  .question > div {
+    height: 24px;
+    width: 24px;
+
+    border-radius: 50%;
+  }
+
+  .question > svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .question:hover > div {
+    scale: 1.1;
+  }
+
+  .answer {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

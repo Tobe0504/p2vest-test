@@ -1,0 +1,112 @@
+.container {
+  background: url("/images/payBillsBg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 280px 80px;
+  position: relative;
+}
+
+.container > h3 {
+  font-family: Paytone One;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: var(--white);
+}
+
+.container > p:nth-child(2) {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-block: 80px;
+  color: var(--white);
+  width: 333px;
+}
+
+.container > p:nth-child(3) {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.container > img:last-child {
+  position: absolute;
+  bottom: 218px;
+  right: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .container > h3 {
+    font-size: 32px;
+    line-height: 150%;
+  }
+
+  .container > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-block: 32px;
+    width: 100%;
+  }
+
+  .container > p:nth-child(3) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 1rem;
+  }
+
+  .container > img:last-child {
+    position: static;
+    margin-top: 1rem;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .container > h3 {
+    font-size: 32px;
+    line-height: 150%;
+  }
+
+  .container > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-block: 32px;
+    width: 100%;
+  }
+
+  .container > p:nth-child(3) {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 1rem;
+  }
+
+  .container > img:last-child {
+    position: static;
+    margin-top: 1rem;
+    margin-inline: auto;
+  }
+}
