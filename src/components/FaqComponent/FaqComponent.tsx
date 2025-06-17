@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import classes from "./FaqComponent.module.css";
-import Plus from "@/assets/svgIcons/Plus";
+import Plus from "@/assets/svgicons/Plus";
 
 type FaqComponentTypes = {
   question: string;
